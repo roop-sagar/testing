@@ -1,16 +1,9 @@
 <div id="main">
   <div id="head">
-    <h2>Sign up with your email</h2>
-    <p>Already have an account? <a routerLink="/signin"> Sign in</a></p>
+    <h2>Sign In with your email</h2>
+    <p>Don't have an account? <a routerLink="/signup"> Sign Up</a></p>
 </div>
-  <form nz-form [formGroup]="validateForm1" (ngSubmit)="submitForm1(validateForm1.value)">
-    <nz-form-item>
-      <nz-form-control nzErrorTip="Please input your name!">
-        <nz-input-group nzPrefixIcon="user">
-          <input type="text" nz-input formControlName="username1" placeholder="User Name" />
-        </nz-input-group>
-      </nz-form-control>
-    </nz-form-item>
+  <form nz-form [formGroup]="validatesSignin" (ngSubmit)="submitSignin(validatesSignin.value)">
 
     <nz-form-item>
       <nz-form-control nzErrorTip="Please input your email!">
@@ -29,7 +22,7 @@
     </nz-form-item>
 
 
-    <button nz-button class="login-form-button login-form-margin"  [nzType]="'primary'" [disabled]="!validateForm1!.valid">Sign Up</button>
+    <button nz-button class="login-form-button login-form-margin"  [nzType]="'primary'" [disabled]="!validatesSignin!.valid">Sign In</button>
 
 
   </form>

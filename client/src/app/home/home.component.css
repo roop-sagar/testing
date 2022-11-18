@@ -34,3 +34,7 @@ body{
 .ant-modal{
 border-radius:20px;
 }
+
+.home :hover{
+  color: rgb(75, 75, 240);
+}

@@ -19,6 +19,7 @@ import {NzButtonModule } from 'ng-zorro-antd/button';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
+import { SigninComponent } from './signin/signin.component';
 
 registerLocaleData(en);
 
@@ -27,7 +28,8 @@ registerLocaleData(en);
     AppComponent,
     DashboardComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    SigninComponent
   ],
   imports: [
 BrowserModule,

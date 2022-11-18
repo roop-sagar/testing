@@ -21,13 +21,18 @@ export class SignupComponent implements OnInit {
   }
 
   submitForm1(data: any): void {
-    console.log(this.validateForm1.value);
+
     const send= {
       name: data.username1,
       email: data.email1,
       password: data.password1
     }
-    this.http.post<any>('http://localhost:5000/send',send).subscribe((data)=>console.log(data));
-      console.log(data);
+    this.http.post<any>('http://localhost:5000/send',send).subscribe();
+
+      this.validateForm1 = this.fb.group({
+        username1:[null],
+        email1: [null],
+        password1: [null],
+      });
   }
 }
