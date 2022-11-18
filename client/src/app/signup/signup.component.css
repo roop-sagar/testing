@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&display=swap');
+/* form{
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 3px 1px rgb(250, 250, 250);
+  background-color: white;
+  font-weight: 200;
+} */
+form{
+  padding: 30px;
+  padding-top: 40px;
+
+}
+#main{
+  margin: 2% 31%;
+  background-color:whitesmoke;
+  font-family: 'M PLUS 1', sans-serif;
+  /* box-shadow: 1px 1px 3px 1px rgb(121, 101, 251); */
+  font-weight: bold;
+  height: 500px;
+}
+#head{
+  text-align: left;
+  padding-left: 45px;
+  padding-top: 30px;
+
+}
+input{
+  width: 75%;
+  padding: 15px;
+  margin: 10px;
+  font-family: 'M PLUS 1', sans-serif;
+
+}

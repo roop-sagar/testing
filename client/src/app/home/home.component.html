@@ -1,0 +1,25 @@
+<nz-layout>
+  <nz-header>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal">
+      <div class="row justify-content-between">
+        <div class="col-2">
+          <li nz-menu-item>Cafe Management System</li>
+        </div>
+
+        <div class="col-3 d-flex flex-row p-0 justify-content-end">
+          <li nz-menu-item>
+            <button nz-button nzType="text" class="text-white" routerLink="/signup">Sign Up</button>
+          </li>
+
+          <li nz-menu-item>
+            <button nz-button nzType="text" class="text-white">Sign In</button>
+          </li>
+        </div>
+      </div>
+    </ul>
+  </nz-header>
+  <nz-content> <router-outlet></router-outlet></nz-content>
+  <nz-footer class="foot p-0 m-0">
+    <p class="m-0">Cafe Management ©2022 Implement By Angular</p>
+  </nz-footer>
+</nz-layout>
