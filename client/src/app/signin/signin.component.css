@@ -16,9 +16,10 @@ form{
   margin: 2% 31%;
   background-color:whitesmoke;
   font-family: 'M PLUS 1', sans-serif;
-  /* box-shadow: 1px 1px 3px 1px rgb(121, 101, 251); */
+  box-shadow: 1px 1px 7px 1px rgb(232, 231, 243);
   font-weight: bold;
   height: 400px;
+  border-radius: 5px;
 }
 #head{
   text-align: left;

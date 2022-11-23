@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, Validators, UntypedFormGroup, UntypedFormControl, ValidationErrors, FormGroup, FormBuilder } from '@angular/forms';
-import { Observable, Observer } from 'rxjs';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {  Validators, FormGroup, FormBuilder } from '@angular/forms';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-signup',
@@ -27,7 +26,14 @@ export class SignupComponent implements OnInit {
       email: data.email1,
       password: data.password1
     }
-    this.http.post<any>('http://localhost:5000/send',send).subscribe();
+    // let headerOptions = {
+    //   headers: new HttpHeaders(
+    //       // {'content-type':'application/json'}),
+    //       {  responseType:'text'})
+    //   };
+    this.http.post<any>('http://localhost:5000/register',send,{observe:'response',responseType:'json'}).subscribe(
+      res => alert(res.body.message)
+    );
 
       this.validateForm1 = this.fb.group({
         username1:[null],
